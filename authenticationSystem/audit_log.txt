@@ -1,0 +1,7 @@
+[30-09-2026 10:47:31] Felipe successfully Registered.
+[30-09-2026 10:48:54] Felipe successfully logged in.
+[30-09-2026 10:57:26] Failed login attempt for user Felipe
+[30-09-2026 10:58:18] User 'Felipe' logged out
+[30-09-2026 10:58:18] Felipe successfully logged in.
+[30-09-2026 10:58:37] User 'Felipe' logged out
+[30-09-2026 10:58:37] Felipe successfully logged in.
