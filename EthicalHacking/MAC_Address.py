@@ -31,7 +31,7 @@ def change_mac_address(interface, new_macAddress):
 
     subprocess.call(["ifconfig", interface, "down"])
     subprocess.call(["ifconfig", interface, "hw", "ether", new_macAddress])
-    subprocess.call(["ifconfig", "eth0", "up"])
+    subprocess.call(["ifconfig", interface, "up"])
 
 #run the function
 options = get_arguments()
