@@ -1,3 +1,4 @@
+#!/usr/bin/evn python
 #MAC Address is used to identify hardware within the network
 
 #Why change the MAC(Media access control) Address?
@@ -10,17 +11,16 @@
 #sudo ifconfig eth0 hw ether 00:11:22:33:44:55 - change mac address
 #sudo ifconfig eth0 up - enable network
 
-#!/usr/bin/evn python
 import subprocess
 import argparse
 import re
 
 def get_arguments():
     parser = argparse.ArgumentParser()
-    parser.add_option("-i", "--interface", dest="interface", help="Interface to change MAC address", required=True)
-    parser.add_option("-m", "--mac", dest="new_macAddress", help="New MAC address", required=True)
-    (options, arguments) = parser.parse_args()
-
+    parser.add_argument("-i", "--interface", dest="interface", help="Interface to change MAC address", required=True)
+    parser.add_argument("-m", "--mac", dest="new_macAddress", help="New MAC address", required=True)
+    options = parser.parse_args()
+    return options
 
 def change_mac_address(interface, new_macAddress):
     print("[+] Changing MAC address for " + interface + " to " + new_macAddress)
